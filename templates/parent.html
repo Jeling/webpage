@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+    {% block head %}
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    </head>
+    <body>
+        <h1 class="title">Witaj na mojej stronie domowej</h1>
+        <img src="https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-71.jpg?size=338&ext=jpg" alt="Car on a road with mountains" title="Journey">
+        <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>

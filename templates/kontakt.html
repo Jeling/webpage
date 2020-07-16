@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Kontakt</title>
+    </head>
+    <body>
+        {% extends "parent.html" %}
+        {% block content %}
+        <p class="subtitle"><strong>Kontakt</strong></p>
+        <div id="info">
+            <ul>
+                <li>
+                    email: abc@def.pl
+                </li>
+                <li>
+                    telefon: 123456789
+                </li>
+            </ul>
+            <form action="" method="POST">
+                <p><strong>Wyślij wiadomość</strong></p>
+                <textarea></textarea>
+                <button type="submit">Prześlij</button>
+            </form>
+        </div>
+        {% endblock %}
+    </body>
+</html>
